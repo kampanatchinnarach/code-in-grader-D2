@@ -55,6 +55,7 @@ for i in range(1,num+1):
       count_2 += 1
   print(i,main_q,cash_1,cash_2)
   
+  
   if count_1 == 3 and not cash_1.isEmpty():
     cash_1.deQueue()
     count_1 = 0
