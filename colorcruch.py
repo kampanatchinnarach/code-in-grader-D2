@@ -186,6 +186,7 @@ while not norm.isEmpty():
       box = norm.deQueue()
       c2 = 1
 
+
 left_color2.reverse()
 mirr_left = ''.join(left_color1.list)
 norm_left = ''.join(left_color2.list)
