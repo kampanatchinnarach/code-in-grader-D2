@@ -27,17 +27,13 @@ class LinkedList(object):
         
         new_node = Node(data)
         
-        
         new_node.set_next(self.head)
         
-        
         self.head = new_node
-        
         
         self.count += 1
         
     def find(self, val):
-        
         
         item = self.head
         
@@ -51,17 +47,13 @@ class LinkedList(object):
            else:
                 item = item.get_next()
               
-       
         return None
   
     def remove(self, item):
         
-        
-       
         current = self.head
         
         previous = None
-        
        
         while current is not None:
             
@@ -71,7 +63,6 @@ class LinkedList(object):
             previous = current
             current = current.get_next()
             
-        
         if current is None:
             raise ValueError(f"{item} is not in the list")
         
