@@ -60,6 +60,8 @@ for i in range(1,num+1):
     cash_1.deQueue()
     count_1 = 0
     
+    
+    #gg
   if count_2 % 2 == 0 and not cash_2.isEmpty():
     cash_2.deQueue()
     
