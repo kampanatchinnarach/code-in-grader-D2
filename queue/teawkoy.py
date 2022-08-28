@@ -22,13 +22,16 @@ class Queue:
 
 people = input('Enter people : ')
 list = []
-list.extend(people)
+
+list.extend(people.split()[0])
+num = int(people.split()[1])
 main_q = Queue(list)
 cash_1 = Queue()
 cash_2 = Queue()
 count_1 = 0
 count_2 = 0
-for i in range(1,main_q.size()+1):
+
+for i in range(1,num):
   
   if cash_1.size() < 5 and not main_q.isEmpty():
     tmp_1 = main_q.deQueue()
